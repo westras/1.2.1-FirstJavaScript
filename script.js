@@ -4,6 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
  const ruta=document.getElementById("ruta");
  const skit=document.getElementById("skit");
  const Display=document.getElementById("clickCount");
+  Display.innerHTML=clickCount;
   
 btn.addEventListener('click', function(){ 
   ruta.classList.add("synligt");
