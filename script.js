@@ -29,8 +29,8 @@ skit.addEventListener('click', function(){
 });
 
 buttons.addEventListener('click', function(){ 
-  clickCount++;
-  Display.innerHTML=clickCount;
+  clickCount+1;
+  Display.textContent=clickCount;
 });
 
 });
