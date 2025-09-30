@@ -1,7 +1,9 @@
-
+document.addEventListener('DOMContentLoaded', function() {
+ let clickCount=0;
  const btn=document.getElementById("btn");
  const ruta=document.getElementById("ruta");
-const skit=document.getElementById("skit");
+ const skit=document.getElementById("skit");
+ const Display=document.getElementById("clickCount");
   
 btn.addEventListener('click', function(){ 
   ruta.classList.add("synligt");
@@ -22,4 +24,8 @@ skit.addEventListener('click', function(){
   btn.classList.remove("osynligt");
   skit.classList.remove("synligt");
   skit.classList.add("osynligt");
+});
+
+
+
 });
