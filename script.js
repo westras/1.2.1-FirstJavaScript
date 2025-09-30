@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
  const ruta=document.getElementById("ruta");
  const skit=document.getElementById("skit");
  const Display=document.getElementById("clickCount");
- const button = document.getElementsByClassName("Knapp");
+ 
  
   
 btn.addEventListener('click', function(){ 
@@ -26,11 +26,9 @@ skit.addEventListener('click', function(){
   btn.classList.remove("osynligt");
   skit.classList.remove("synligt");
   skit.classList.add("osynligt");
+    clickCount+=1;
+  Display.innerHTML=clickCount;
 });
 
-button.addEventListener('click', function(){ 
-  clickCount+=1;
-  Display.textContent=clickCount;
-});
 
 });
